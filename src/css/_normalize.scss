@@ -5,11 +5,8 @@
 /* 2018-05-21
 * remove all ul ,li , img
 */
-*{
-  margin:0;
-}
 
-h1,h2,h3,p{
+h1,h2,h3,p {
   margin: 0;
 }
 
@@ -26,6 +23,7 @@ img{
   max-width: 100%;
   height: auto;
 }
+
 a{
   text-transform: none;
 }
@@ -46,8 +44,9 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
+body,html {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -55,10 +54,10 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-// h1 {
-//   font-size: 2em;
-//   margin: 0.67em 0;
-// }
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
 
 /* Grouping content
    ========================================================================== */

@@ -1,52 +1,48 @@
 extends _layout.jade
 
 block index
-  #header
-    .title
-      h1 Comicomic
-      
     
-  #content
-    .countainer
-       .row.clearfix
-         .col-6.img
-           img(src="https://hexschool.github.io/THE_F2E_Design/week5-comic%20viewer/assets/comic%20cover.png", alt="none")
-         .col-6.hexschool
-           h2 MY HEXSCHOOL
-           .genres 
-            p.subtitle Genres
-            p Fusce/vehicula/dolor
-           .author
-            p.subtitle Author
-            p Namae Shiranai
-           .status 
-            p.subtitle Status
-            p Ongoing
-           .rate
-            p.subtitle Rate
-            ul.star
-             li <i class="fas fa-star"></i>
-             li <i class="fas fa-star"></i>
-             li <i class="fas fa-star"></i>
-             li <i class="fas fa-star"></i>
-             li <i class="far fa-star"></i>
-           .summary
-             p Summary
-             .info
-               p If your banker breaks, you snap; if your apothecary by mistake sends you poison in your pills, you die. 
-               <br>
-               p Therefore, I say, I saw that this situation of mine was the precise situation of every mortal that has this Siamese connexion with a plurality of other mortals. 
+    #header
+      .titleBar
+    #content
+      .countainer
+        .progressbar
+          ul.step
+            li.step.step1
+              .currt1 <i class="far fa-circle"></i>
+              .dot
+            li.step.step2
+              <i class="far fa-circle"></i>
+            li.step.step3
+              <i class="far fa-circle"></i>
+            li.step.step4
+              <i class="far fa-circle"></i>
+        h1.title Create Account
+        h3.subtitle Glad see you here!
+        form(action='', method='post', enctype='application/x-www-form-urlencoded')
+          .row
+            .col-12
+              label(for='account') Account
+              input#account(type='email', name='account' placeholder="example@email.com")
+              <i class="fas fa-exclamation-triangle"></i>
+          .row
+            .col-12
+              label(for='password') Password
+              input#password(type='password', name='' placeholder="●●●●●●●●")
+              <i class="fas fa-exclamation-triangle"></i>
+          .row
+            .col-12
+              label(for='comfirm') Comfirm Password
+              input#comfirm(type='password', name='' placeholder="●●●●●●●●")
+              <i class="fas fa-exclamation-triangle"></i>
+          .row
+            .col-12
+              .btn
+                <i class="fas fa-angle-right"></i>
+                a(href="info.html") NEXT
+               
 
-  #footer
-    .countainer
-      .chapters
-        p All Chapters
-        ul.page
-          li
-            a(href="chapter1.html") Chapter 1: The F2E Challenge Start!
-          li
-            a(href="chapter1.html") Chapter 2: Todo List Going Crazy!
-            span NEW
+
       
     
 

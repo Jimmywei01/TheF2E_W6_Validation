@@ -1,0 +1,63 @@
+extends _layout.jade
+
+block info
+    #header
+      .titleBar
+    #content
+      .countainer
+        .progressbar
+          ul.step
+            li.step.step1
+              .currt1 <i class="far fa-circle"></i>
+              .dot
+            li.step.step2
+              <i class="far fa-circle"></i>
+            li.step.step3
+              <i class="far fa-circle"></i>
+            li.step.step4
+              <i class="far fa-circle"></i>
+        h1.title Create Account
+        h3.subtitle Glad see you here!
+        form(action='', method='post', enctype='application/x-www-form-urlencoded')
+          .row
+            .col-6
+              label(for="name") Name
+              input(type="text" id="name")
+            .col-6
+              label(for="phone") Phone
+              input(type="tel" id="phone")
+          .row
+            .col-4
+              label(for="name") Birth Date
+              select(name="Birth Date") 
+               option(value="1990") 1990
+               option(value="1991") 1991
+            .col-4
+               select(name="")
+                option(value="01") 01
+                option(value="02") 02
+            .col-4
+              select(name="")
+               option(value="01") 01
+               option(value="02") 02
+          .row
+            .col-6
+              label(for="address") Address
+              select(name="")
+                option(value="01") Koahsiung Cite
+                option(value="02") Taipei Cite
+            .col-6
+              select(name="")
+                option(value="01") Yancheng Dist
+          .row
+            .col-12
+              input(type="text" placeholder="detail address")
+          .row
+            .col-6
+              .btn
+                a(href="index.html") PREVIOUS
+            .col-6
+              .btn
+                <i class="fas fa-angle-right"></i>
+                a(href="info.html") NEXT
+
