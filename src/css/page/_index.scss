@@ -1,9 +1,11 @@
+// header
 .titleBar{
         border: 3px solid $f2eW1-first;
         width: 456px;
         margin: 0 auto;
 }
 
+// content
 .countainer{
         margin: 0 auto;
         width: 460px;
@@ -36,16 +38,6 @@
             .currt1 i{
                 color: #0275D8;
             }
-        }
-        .dot{
-                width: 8px;
-                height: 8px;
-                background: #0275D8;
-                border: 2px solid #0275D8;
-                border-radius: 8px;
-                position: relative;
-                top: -13px;
-                left: 3px;
         }
     }
 }
@@ -89,25 +81,30 @@
     }
 }
 
-    
-.btn{
-   background: $f2eW1-fourth;
-   border: 2px solid $f2eW1-fourth;
-   border-radius: 8px;
-   width: 100%;
-   height: 52px;
-   font-size: 20px;
-   text-align: center;
-   line-height: 52px;
-   i{
-        display: block;
-        position: absolute;
-        line-height: 52px;
-        left: 120px;
+button {
+    background: $f2eW1-fourth;
+    border: 2px solid $f2eW1-fourth;
+    border-radius: 8px;
+    width: 100%;
+    height: 52px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 52px;
+    a {
         color: $f2eW1-third;
-   }
-   a {
-       color: $f2eW1-third;
-       text-decoration: none;
-   }
+        text-decoration: none;
+    }
 }
+
+.btn-next i {
+    display: block;
+    position: absolute;
+    width: 8px;
+    line-height: 46px;
+    right: 170px;
+    bottom: 0;
+    color: $f2eW1-third;
+}
+
+
+

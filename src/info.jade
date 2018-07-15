@@ -8,55 +8,57 @@ block info
         .progressbar
           ul.step
             li.step.step1
-              .currt1 <i class="far fa-circle"></i>
-              .dot
+              .currt1 <i class="fas fa-check-circle"></i>
             li.step.step2
-              <i class="far fa-circle"></i>
+              .currt2 <i class="far fa-dot-circle"></i>
             li.step.step3
               <i class="far fa-circle"></i>
             li.step.step4
               <i class="far fa-circle"></i>
-        h1.title Create Account
-        h3.subtitle Glad see you here!
+        h1.title General Infomation
+        h3.subtitle Tell us who you are!
         form(action='', method='post', enctype='application/x-www-form-urlencoded')
-          .row
-            .col-6
+          .row.row-name
+            .col-6.col6-left
               label(for="name") Name
               input(type="text" id="name")
-            .col-6
-              label(for="phone") Phone
+            .col-6.col6-right.icon
+              label(for="phone") Phone*
               input(type="tel" id="phone")
-          .row
-            .col-4
+              <i class="fas fa-exclamation-triangle"></i>
+          .row.row-birthday
+            .col-4.year
               label(for="name") Birth Date
               select(name="Birth Date") 
                option(value="1990") 1990
                option(value="1991") 1991
-            .col-4
+            .col-4.month
                select(name="")
                 option(value="01") 01
                 option(value="02") 02
-            .col-4
+            .col-4.date
               select(name="")
                option(value="01") 01
                option(value="02") 02
           .row
-            .col-6
-              label(for="address") Address
+            .col-6.col6-left
+              label(for="address") Address*
               select(name="")
                 option(value="01") Koahsiung Cite
                 option(value="02") Taipei Cite
-            .col-6
+            .col-6.col6-right.area
               select(name="")
                 option(value="01") Yancheng Dist
-          .row
+          .row.detail
             .col-12
               input(type="text" placeholder="detail address")
-          .row
-            .col-6
+              <i class="fas fa-exclamation-triangle"></i>
+          .row.button
+            .col-6.btn-previous
               .btn
+                <i class="fas fa-angle-left"></i>
                 a(href="index.html") PREVIOUS
-            .col-6
+            .col-6.btn-next2
               .btn
                 <i class="fas fa-angle-right"></i>
                 a(href="info.html") NEXT
