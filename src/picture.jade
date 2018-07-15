@@ -1,0 +1,35 @@
+extends _layout.jade
+
+block picture
+    
+    #header
+      .titleBar
+    #content
+      .countainer
+        .progressbar
+          ul.step
+            li.step.step1
+              .currt1 <i class="fas fa-check-circle"></i>
+            li.step.step2
+              .currt2 <i class="fas fa-check-circle"></i>
+            li.step.step3
+              .currt3 <i class="far fa-dot-circle"></i>
+            li.step.step4
+              <i class="far fa-circle"></i>
+        h1.title Update Profile Picture
+        h3.subtitle We wanna know you more!
+        .row
+          .col-12
+            label(for="")
+            input(type="file", name="")
+            .img
+            p
+        .row.button
+            .col-6.btn-previous
+              .btn
+                <i class="fas fa-angle-left"></i>
+                a(href="index.html") PREVIOUS
+            .col-6.btn-next2
+              .btn
+                <i class="fas fa-angle-right"></i>
+                a(href="info.html") NEXT
