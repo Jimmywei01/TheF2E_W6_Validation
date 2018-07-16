@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheect" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500,700,700i"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="titleBar"></div>
+    </div>
+    <div id="content">
+      <div class="countainer">
+        <div class="progressbar">
+          <ul class="step">
+            <li class="step step1">
+              <div class="currt"><i class="fas fa-check-circle"></i></div>
+            </li>
+            <li class="step step2">
+              <div class="currt"><i class="far fa-dot-circle"></i></div>
+            </li>
+            <li class="step step3"><i class="far fa-circle"></i></li>
+            <li class="step step4"><i class="far fa-circle"></i></li>
+          </ul>
+        </div>
+        <h1 class="title">General Infomation</h1>
+        <h3 class="subtitle">Tell us who you are!</h3>
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+          <div class="row row-name">
+            <div class="col-6 col6-left">
+              <label for="name">Name</label>
+              <input type="text" id="name"/>
+            </div>
+            <div class="col-6 col6-right icon">
+              <label for="phone">Phone*</label>
+              <input type="tel" id="phone"/><i class="fas fa-exclamation-triangle"></i>
+            </div>
+          </div>
+          <div class="row row-birthday">
+            <div class="col-4 year">
+              <label for="name">Birth Date</label>
+              <select name="Birth Date"> 
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+              </select>
+            </div>
+            <div class="col-4 month">
+              <select name="">
+                <option value="01">01</option>
+                <option value="02">02</option>
+              </select>
+            </div>
+            <div class="col-4 date">
+              <select name="">
+                <option value="01">01</option>
+                <option value="02">02</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 col6-left">
+              <label for="address">Address*</label>
+              <select name="">
+                <option value="01">Koahsiung Cite</option>
+                <option value="02">Taipei Cite</option>
+              </select>
+            </div>
+            <div class="col-6 col6-right area">
+              <select name="">
+                <option value="01">Yancheng Dist</option>
+              </select>
+            </div>
+          </div>
+          <div class="row detail">
+            <div class="col-12">
+              <input type="text" placeholder="detail address"/><i class="fas fa-exclamation-triangle"></i>
+            </div>
+          </div>
+          <div class="row button">
+            <div class="col-6 btn-previous">
+              <div class="btn"><i class="fas fa-angle-left"></i><a href="index.html">PREVIOUS</a></div>
+            </div>
+            <div class="col-6 btn-next2">
+              <div class="btn"><i class="fas fa-angle-right"></i><a href="picture.html">NEXT</a></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
