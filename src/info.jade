@@ -1,0 +1,65 @@
+extends _layout.jade
+
+block info
+    #header
+      .titleBar
+    #content
+      .countainer
+        .progressbar
+          ul.step
+            li.step.step1
+              .currt <i class="fas fa-check-circle"></i>
+            li.step.step2
+              .currt <i class="far fa-dot-circle"></i>
+            li.step.step3
+              <i class="far fa-circle"></i>
+            li.step.step4
+              <i class="far fa-circle"></i>
+        h1.title General Infomation
+        h3.subtitle Tell us who you are!
+        form(action='', method='post', enctype='application/x-www-form-urlencoded')
+          .row.row-name
+            .col-6.col6-left
+              label(for="name") Name
+              input(type="text" id="name")
+            .col-6.col6-right.icon
+              label(for="phone") Phone*
+              input(type="tel" id="phone")
+              <i class="fas fa-exclamation-triangle"></i>
+          .row.row-birthday
+            .col-4.year
+              label(for="name") Birth Date
+              select(name="Birth Date") 
+               option(value="1990") 1990
+               option(value="1991") 1991
+            .col-4.month
+               select(name="")
+                option(value="01") 01
+                option(value="02") 02
+            .col-4.date
+              select(name="")
+               option(value="01") 01
+               option(value="02") 02
+          .row
+            .col-6.col6-left
+              label(for="address") Address*
+              select(name="")
+                option(value="01") Koahsiung Cite
+                option(value="02") Taipei Cite
+            .col-6.col6-right.area
+              select(name="")
+                option(value="01") Yancheng Dist
+          .row.detail
+            .col-12
+              input(type="text" placeholder="detail address")
+              <i class="fas fa-exclamation-triangle"></i>
+          .row.button
+            .col-6.btn-previous
+              .btn
+                <i class="fas fa-angle-left"></i>
+                a(href="index.html") PREVIOUS
+            .col-6.btn-next2
+              .btn
+                <i class="fas fa-angle-right"></i>
+                a(href="picture.html") NEXT
+
